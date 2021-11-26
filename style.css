@@ -1,0 +1,351 @@
+body {
+    background-color: grey;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.4fr 1.2fr 0.4fr;
+}
+
+.board {
+    width: auto;
+    height: 1000px;
+    border: 1px solid greenyellow;
+    grid-column: 2;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.circle {
+    font-size: 30px;
+    background-color: khaki;
+    border: 1px dotted black;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------- */
+
+.players {
+    border: 1px solid greenyellow;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: auto;
+    height: 1000px;
+}
+
+.player-1 {
+    background-color: rgb(0, 162, 255);
+    grid-row: 1;
+    height: 250px;
+}
+
+.player-2 {
+    background-color: red;
+    grid-row: 2;
+    height: 250px;
+}
+
+.player-3 {
+    background-color: green;
+    grid-row: 3;
+    height: 250px;
+}
+
+.player-4 {
+    background-color: yellow;
+    grid-row: 4;
+    height: 250px;
+}
+
+/* ----------------------------------------------------- */
+
+.dynamics {
+    border: 1px solid greenyellow;
+}
+
+button {
+    display: block;
+}
+
+/* ----------------------------------------------------- */
+
+/* 1 */
+#t1 {
+    /* background-image: url("./assets/tiles/mountains.png"); */
+    position: absolute;
+    left: 36%;
+    bottom: 72%;
+}
+
+/* 2 */
+#t2 {
+    /* background-image: url("./assets/tiles/farm.png"); */
+    position: absolute;
+    left: 46%;
+    bottom: 72%;
+}
+
+/* 3 */
+#t3 {
+    /* background-image: url("./assets/tiles/forest.png"); */
+    position: absolute;
+    left: 56%;
+    bottom: 72%;
+}
+
+/* 4 */
+#t4 {
+    /* background-image: url("./assets/tiles/field.png"); */
+    position: absolute;
+    top: 24.5%;
+    left: 31%;
+}
+
+/* 5 */
+#t5 {
+    /* background-image: url("./assets/tiles/factory.png"); */
+    position: absolute;
+    top: 24.5%;
+    left: 41%;
+}
+
+/* 6 */
+#t6 {
+    /* background-image: url("./assets/tiles/farm.png"); */
+    position: absolute;
+    top: 24.5%;
+    left: 51%;
+}
+
+/* 7 */
+#t7 {
+    /* background-image: url("./assets/tiles/factory.png"); */
+    position: absolute;
+    top: 24.5%;
+    left: 61%;
+}
+
+/* 8 */
+#t8 {
+    /* background-image: url("./assets/tiles/field.png"); */
+    position: absolute;
+    top: 42%;
+    left: 26%;
+}
+
+/* 9 */
+#t9 {
+    /* background-image: url("./assets/tiles/forest.png"); */
+    position: absolute;
+    top: 42%;
+    left: 36%;
+}
+
+/* 10 */
+#t10 {
+    /* background-image: url("./assets/tiles/farm.png"); */
+    position: absolute;
+    top: 42%;
+    left: 46%;
+}
+
+/* 11 */
+#t11 {
+    /* background-image: url("./assets/tiles/forest.png"); */
+    position: absolute;
+    top: 42%;
+    left: 56%;
+}
+
+/* 12 */
+#t12 {
+    /* background-image: url("./assets/tiles/mountains.png"); */
+    position: absolute;
+    top: 42%;
+    left: 66%;
+}
+
+/* 13 */
+#t13 {
+    /* background-image: url("./assets/tiles/forest.png"); */
+    position: absolute;
+    top: 59%;
+    left: 31%;
+}
+
+/* 14 */
+#t14 {
+    /* background-image: url("./assets/tiles/mountains.png"); */
+    position: absolute;
+    top: 59%;
+    left: 41%;
+}
+
+/* 15 */
+#t15 {
+    /* background-image: url("./assets/tiles/field.png"); */
+    position: absolute;
+    top: 59%;
+    left: 51%;
+}
+
+/* 16 */
+#t16 {
+    /* background-image: url("./assets/tiles/farm.png"); */
+    position: absolute;
+    top: 59%;
+    left: 61%;
+}
+
+/* 17 */
+#t17 {
+    /* background-image: url("./assets/tiles/factory.png"); */
+    position: absolute;
+    top: 76%;
+    left: 36%;
+}
+
+/* 18 */
+#t18 {
+    /* background-image: url("./assets/tiles/field.png"); */
+    position: absolute;
+    top: 76%;
+    left: 46%;
+}
+
+/* 19 */
+#t19 {
+    /* background-image: url("./assets/tiles/desert.png"); */
+    position: absolute;
+    top: 76%;
+    left: 56%;
+}
+
+/* ----------------------------------------------------- */
+
+.road {
+    position: absolute;
+    width: 90px;
+    height: 15px;
+    border: 1px dotted black;
+    border-radius: 5px;
+}
+
+.tl {
+    transform: rotate(-30deg) translate(0%, -560%);
+}
+
+.tr {
+    transform: rotate(30deg) translate(0%, -560%);
+}
+
+.l {
+    transform: rotate(-90deg) translate(0%, -560%);
+}
+
+.r {
+    transform: rotate(90deg) translate(0%, -560%);
+}
+
+.bl {
+    transform: rotate(30deg) translate(0%, 560%);
+}
+
+.br {
+    transform: rotate(-30deg) translate(0%, 560%);
+}
+
+/* ----------------------------------------------------- */
+
+.town {
+    border: 1px dotted black;
+    width: 50px;
+    height: 50px;
+}
+
+.townt {
+    position: absolute;
+    z-index: 1;
+    transform: translate(0%, -200%);
+}
+
+.townb {
+    position: absolute;
+    z-index: 1;
+    transform: translate(0%, 200%);
+}
+
+.townl {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-190%, -120%);
+}
+
+.townr {
+    position: absolute;
+    z-index: 1;
+    transform: translate(190%, -120%);
+}
+
+.townbl {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-190%, 120%);
+}
+
+.townbr {
+    position: absolute;
+    z-index: 1;
+    transform: translate(190%, 120%);
+}
+
+/* ----------------------------------------------------- */
+
+.robber {
+    background-image: url("./assets/robber.png");
+    background-size: 100%;
+    /* border: 3px solid black; */
+    /* border-radius: 50%; */
+    /* width: 90px;
+    height: 90px; */
+}
+
+/* ----------------------------------------------------- */
+
+.mountains {
+    background-image: url("./assets/tiles/mountains.png");
+}
+
+.factory {
+    background-image: url("./assets/tiles/factory.png");
+}
+
+.farm {
+    background-image: url("./assets/tiles/farm.png");
+}
+
+.field {
+    background-image: url("./assets/tiles/field.png");
+}
+
+.forest {
+    background-image: url("./assets/tiles/forest.png");
+}
+
+.desert {
+    background-image: url("./assets/tiles/desert.png");
+}

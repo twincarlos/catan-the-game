@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CATAN</title>
+</head>
+<body>
+    <div class="players">
+        <!-- PLAYER 1 -->
+        <div class="player-1">
+            <h1 class="player-names" id="name-1">PLAYER 1</h1>
+            <ul class="player-counter">
+                <li class="wood-counter">wood: 0</li>
+                <li class="brick-counter">brick: 0</li>
+                <li class="wheat-counter">wheat: 0</li>
+                <li class="wool-counter">wool: 0</li>
+                <li class="rock-counter">rock: 0</li>
+                <li class="point-counter">points: 0</li>
+            </ul>
+        </div>
+
+        <!-- PLAYER 2 -->
+        <div class="player-2">
+            <h1 class="player-names" id="name-2">PLAYER 2</h1>
+            <ul class="player-counter">
+                <li class="wood-counter">wood: 0</li>
+                <li class="brick-counter">brick: 0</li>
+                <li class="wheat-counter">wheat: 0</li>
+                <li class="wool-counter">wool: 0</li>
+                <li class="rock-counter">rock: 0</li>
+                <li class="point-counter">points: 0</li>
+            </ul>
+        </div>
+
+        <!-- PLAYER 3 -->
+        <div class="player-3">
+            <h1 class="player-names" id="name-3">PLAYER 3</h1>
+            <ul class="player-counter">
+                <li class="wood-counter">wood: 0</li>
+                <li class="brick-counter">brick: 0</li>
+                <li class="wheat-counter">wheat: 0</li>
+                <li class="wool-counter">wool: 0</li>
+                <li class="rock-counter">rock: 0</li>
+                <li class="point-counter">points: 0</li>
+            </ul>
+        </div>
+
+        <!-- PLAYER 4 -->
+        <div class="player-4">
+            <h1 class="player-names" id="name-4">PLAYER 4</h1>
+            <ul class="player-counter">
+                <li class="wood-counter">wood: 0</li>
+                <li class="brick-counter">brick: 0</li>
+                <li class="wheat-counter">wheat: 0</li>
+                <li class="wool-counter">wool: 0</li>
+                <li class="rock-counter">rock: 0</li>
+                <li class="point-counter">points: 0</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="board">
+
+        <!-- 1 -->
+        <div class="tile" id="t1">
+            <div class="town townt" id="town1"></div>
+            <div class="town townb" id="town2"></div>
+            <div class="town townl" id="town3"></div>
+
+
+            <button type="submit" class="road tl" id="r1"></button>
+            <button type="submit"  class="road tr" id="r2"></button>
+            <button type="submit"  class="road l" id="r3"></button>
+            <button type="submit"  class="road r" id="r4"></button>
+            <button type="submit"  class="road bl" id="r5"></button>
+            <button type="submit"  class="road br" id="r6"></button>
+
+            <div class="circle" id="c1"></div>
+        </div>
+
+        <!-- 2 -->
+        <div class="tile" id="t2">
+            <div class="town townt" id="town4"></div>
+            <div class="town townb" id="town5"></div>
+            <div class="town townl" id="town6"></div>
+
+            <button type="submit" class="road tl" id="r7"></button>
+            <button type="submit" class="road tr" id="r8"></button>
+            <button type="submit" class="road r" id="r9"></button>
+            <button type="submit" class="road bl" id="r10"></button>
+            <button type="submit" class="road br" id="r11"></button>
+
+            <div class="circle" id="c2"></div>
+        </div>
+
+        <!-- 3 -->
+        <div class="tile" id="t3">
+            <div class="town townt" id="town7"></div>
+            <div class="town townb" id="town8"></div>
+            <div class="town townl" id="town53"></div>
+            <div class="town townr" id="town54"></div>
+
+            <button type="submit" class="road tl" id="r12"></button>
+            <button type="submit" class="road tr" id="r13"></button>
+            <button type="submit" class="road r" id="r14"></button>
+            <button type="submit" class="road bl" id="r15"></button>
+            <button type="submit" class="road br" id="r16"></button>
+
+            <div class="circle" id="c3"></div>
+        </div>
+
+        <!-- 4 -->
+        <div class="tile" id="t4">
+            <div class="town townt" id="town9"></div>
+            <div class="town townb" id="town10"></div>
+            <div class="town townl" id="town11"></div>
+
+            <button type="submit" class="road tl" id="r17"></button>
+            <button type="submit" class="road l" id="r18"></button>
+            <button type="submit" class="road r" id="r19"></button>
+            <button type="submit" class="road bl" id="r20"></button>
+            <button type="submit" class="road br" id="r21"></button>
+
+            <div class="circle" id="c4"></div>
+        </div>
+
+        <!-- 5 -->
+        <div class="tile" id="t5">
+            <div class="town townt" id="town12"></div>
+            <div class="town townb" id="town13"></div>
+
+            <div class="road r" id="r22"></div>
+            <div class="road bl" id="r23"></div>
+            <div class="road br" id="r24"></div>
+
+            <div class="circle" id="c5"></div>
+        </div>
+
+        <!-- 6 -->
+        <div class="tile" id="t6">
+            <div class="town townt" id="town14"></div>
+            <div class="town townb" id="town15"></div>
+
+            <div class="road r" id="r25"></div>
+            <div class="road bl" id="r26"></div>
+            <div class="road br" id="r27"></div>
+
+            <div class="circle" id="c6"></div>
+        </div>
+
+        <!-- 7 -->
+        <div class="tile" id="t7">
+            <div class="town townt" id="town16"></div>
+            <div class="town townb" id="town17"></div>
+            <div class="town townr" id="town18"></div>
+
+            <div class="road tr" id="r28"></div>
+            <div class="road r" id="r29"></div>
+            <div class="road bl" id="r30"></div>
+            <div class="road br" id="r31"></div>
+
+            <div class="circle" id="c7"></div>
+        </div>
+
+        <!-- 8 -->
+        <div class="tile" id="t8">
+            <div class="town townt" id="town19"></div>
+            <div class="town townb" id="town20"></div>
+            <div class="town townl" id="town21"></div>
+            <div class="town townbl" id="town22"></div>
+
+            <div class="road tl" id="r32"></div>
+            <div class="road l" id="r33"></div>
+            <div class="road r" id="r34"></div>
+            <div class="road bl" id="r35"></div>
+            <div class="road br" id="r36"></div>
+
+            <div class="circle" id="c8"></div>
+        </div>
+
+        <!-- 9 -->
+        <div class="tile" id="t9">
+            <div class="town townt" id="town23"></div>
+            <div class="town townb" id="town24"></div>
+
+            <div class="road r" id="r37"></div>
+            <div class="road bl" id="r38"></div>
+            <div class="road br" id="r39"></div>
+
+            <div class="circle" id="c9"></div>
+        </div>
+
+        <!-- 10 -->
+        <div class="tile" id="t10">
+            <div class="town townt" id="town25"></div>
+            <div class="town townb" id="town26"></div>
+
+            <div class="road r" id="r40"></div>
+            <div class="road bl" id="r41"></div>
+            <div class="road br" id="r42"></div>
+
+            <div class="circle" id="c10"></div>
+        </div>
+
+        <!-- 11 -->
+        <div class="tile" id="t11">
+            <div class="town townt" id="town27"></div>
+            <div class="town townb" id="town28"></div>
+
+            <div class="road r" id="r43"></div>
+            <div class="road bl" id="r44"></div>
+            <div class="road br" id="r45"></div>
+
+            <div class="circle" id="c11"></div>
+        </div>
+
+        <!-- 12 -->
+        <div class="tile" id="t12">
+            <div class="town townt" id="town29"></div>
+            <div class="town townb" id="town30"></div>
+            <div class="town townr" id="town31"></div>
+            <div class="town townbr" id="town32"></div>
+
+            <div class="road tr" id="r46"></div>
+            <div class="road r" id="r47"></div>
+            <div class="road bl" id="r48"></div>
+            <div class="road br" id="r49"></div>
+
+            <div class="circle" id="c12"></div>
+        </div>
+
+        <!-- 13 -->
+        <div class="tile" id="t13">
+            <div class="town townt" id="town33"></div>
+            <div class="town townb" id="town34"></div>
+            <div class="town townbl" id="town35"></div>
+
+            <div class="road l" id="r50"></div>
+            <div class="road r" id="r51"></div>
+            <div class="road bl" id="r52"></div>
+            <div class="road br" id="r53"></div>
+
+            <div class="circle" id="c13"></div>
+        </div>
+
+        <!-- 14 -->
+        <div class="tile" id="t14">
+            <div class="town townt" id="town36"></div>
+            <div class="town townb" id="town37"></div>
+
+            <div class="road r" id="r54"></div>
+            <div class="road bl" id="r55"></div>
+            <div class="road br" id="r56"></div>
+
+            <div class="circle" id="c14"></div>
+        </div>
+
+        <!-- 15 -->
+        <div class="tile" id="t15">
+            <div class="town townt" id="town38"></div>
+            <div class="town townb" id="town39"></div>
+
+            <div class="road r" id="r57"></div>
+            <div class="road bl" id="r58"></div>
+            <div class="road br" id="r59"></div>
+
+            <div class="circle" id="c15"></div>
+        </div>
+
+        <!-- 16 -->
+        <div class="tile" id="t16">
+            <div class="town townt" id="town40"></div>
+            <div class="town townb" id="town41"></div>
+            <div class="town townbr" id="town42"></div>
+
+            <div class="road r" id="r60"></div>
+            <div class="road bl" id="r61"></div>
+            <div class="road br" id="r62"></div>
+
+            <div class="circle" id="c16"></div>
+        </div>
+
+        <!-- 17 -->
+        <div class="tile" id="t17">
+            <div class="town townt" id="town43"></div>
+            <div class="town townb" id="town44"></div>
+            <div class="town townbl" id="town45"></div>
+            <div class="town townbr" id="town46"></div>
+
+            <div class="road l" id="r63"></div>
+            <div class="road r" id="r64"></div>
+            <div class="road bl" id="r65"></div>
+            <div class="road br" id="r66"></div>
+
+            <div class="circle" id="c17"></div>
+        </div>
+
+        <!-- 18 -->
+        <div class="tile" id="t18">
+            <div class="town townt" id="town47"></div>
+            <div class="town townb" id="town48"></div>
+
+            <div class="road r" id="r67"></div>
+            <div class="road bl" id="r68"></div>
+            <div class="road br" id="r69"></div>
+
+            <div class="circle" id="c18"></div>
+        </div>
+
+        <!-- 19 -->
+        <div class="tile" id="t19">
+            <div class="town townt" id="town49"></div>
+            <div class="town townb" id="town50"></div>
+            <div class="town townbl" id="town51"></div>
+            <div class="town townbr" id="town52"></div>
+
+            <div class="road bl" id="r70"></div>
+            <div class="road br" id="r71"></div>
+            <div class="road r" id="r72"></div>
+
+            <div class="circle" id="c19"></div>
+        </div>
+    </div>
+
+    <!-- DYNAMICS -->
+
+    <div class="dynamics">
+        <button type="submit" id="begin">BEGIN</button>
+        <button type="submit" id="roll">ROLL</button>
+    </div>
+
+    <script type="module" src="catan.js"></script>
+</body>
+</html>
