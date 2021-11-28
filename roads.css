@@ -1,0 +1,29 @@
+.road {
+    position: absolute;
+
+    border: dotted 1px white;
+
+    width: 60px;
+    height: 15px;
+}
+
+.road.vertical {
+    transform: rotate(90deg);
+
+    top: 177px;
+    left: 647px;
+}
+
+.road.top-left {
+    transform: rotate(-30deg);
+
+    top: 102px;
+    left: 692px;
+}
+
+.road.top-right {
+    transform: rotate(30deg);
+
+    top: 102px;
+    left: 782px;
+}

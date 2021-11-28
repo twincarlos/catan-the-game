@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    grid-template-columns: 0.4fr 1.2fr 0.4fr;
+
+    width: 1900px;
+    height: 1000px;
+
+    background-color: black;
+}
+
+.players {
+    grid-column: 1;
+}
+
+.board {
+    grid-column: 2;
+}
+
+.game {
+    grid-column: 3;
+}
+
+p {
+    position: absolute;
+}
