@@ -5,4 +5,38 @@
     height: 40px;
 
     border: 1px dotted white;
+
+    background-size: 100%;
+}
+
+.blue-house {
+    background-image: url("./assets/houses/blue-house.png");
+}
+
+.blue-city {
+    background-image: url("./assets/houses/blue-city.png");
+}
+
+.red-house {
+    background-image: url("./assets/houses/red-house.png");
+}
+
+.red-city {
+    background-image: url("./assets/houses/red-city.png");
+}
+
+.green-house {
+    background-image: url("./assets/houses/green-house.png");
+}
+
+.green-city {
+    background-image: url("./assets/houses/green-city.png");
+}
+
+.yellow-house {
+    background-image: url("./assets/houses/yellow-house.png");
+}
+
+.yellow-city {
+    background-image: url("./assets/houses/yellow-house.png");
 }

@@ -1,6 +1,14 @@
-img {
+.tile {
     position: absolute;
+
+    background-repeat: no-repeat;
+
     width: 180px;
+    height: 180px;
+
+    text-align: center;
+    font-size: 40px;
+    padding: 68px 0;
 }
 
 #t-1 {
