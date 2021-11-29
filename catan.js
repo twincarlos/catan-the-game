@@ -267,64 +267,75 @@ function initialHouseAssignment () {
     houses[0].classList.add(tiles[0].classList[2]);
     houses[1].classList.add(tiles[1].classList[2]);
     houses[2].classList.add(tiles[2].classList[2]);
+
     houses[3].classList.add(tiles[0].classList[2]);
-    houses[4].classList.add(tiles[0].classList[2]);
-    houses[5].classList.add(tiles[1].classList[2]);
+    houses[4].classList.add(tiles[0].classList[2], tiles[1].classList[2]);
+    houses[5].classList.add(tiles[1].classList[2], tiles[2].classList[2]);
     houses[6].classList.add(tiles[2].classList[2]);
-    houses[7].classList.add(tiles[0].classList[2]);
-    houses[8].classList.add(tiles[0].classList[2]);
-    houses[9].classList.add(tiles[1].classList[2]);
-    houses[10].classList.add(tiles[0].classList[2]);
-    houses[11].classList.add(tiles[0].classList[2]);
-    houses[12].classList.add(tiles[0].classList[2]);
-    houses[13].classList.add(tiles[0].classList[2]);
-    houses[14].classList.add(tiles[0].classList[2]);
-    houses[15].classList.add(tiles[0].classList[2]);
-    houses[16].classList.add(tiles[0].classList[2]);
-    houses[17].classList.add(tiles[0].classList[2]);
-    houses[18].classList.add(tiles[0].classList[2]);
-    houses[19].classList.add(tiles[0].classList[2]);
-    houses[20].classList.add(tiles[0].classList[2]);
-    houses[21].classList.add(tiles[0].classList[2]);
-    houses[22].classList.add(tiles[0].classList[2]);
-    houses[23].classList.add(tiles[0].classList[2]);
-    houses[24].classList.add(tiles[0].classList[2]);
-    houses[25].classList.add(tiles[0].classList[2]);
-    houses[26].classList.add(tiles[0].classList[2]);
-    houses[27].classList.add(tiles[0].classList[2]);
-    houses[28].classList.add(tiles[0].classList[2]);
-    houses[29].classList.add(tiles[0].classList[2]);
-    houses[30].classList.add(tiles[0].classList[2]);
-    houses[31].classList.add(tiles[0].classList[2]);
-    houses[32].classList.add(tiles[0].classList[2]);
-    houses[33].classList.add(tiles[0].classList[2]);
-    houses[34].classList.add(tiles[0].classList[2]);
-    houses[35].classList.add(tiles[0].classList[2]);
-    houses[36].classList.add(tiles[0].classList[2]);
-    houses[37].classList.add(tiles[0].classList[2]);
-    houses[38].classList.add(tiles[0].classList[2]);
-    houses[39].classList.add(tiles[0].classList[2]);
-    houses[40].classList.add(tiles[0].classList[2]);
-    houses[41].classList.add(tiles[0].classList[2]);
-    houses[42].classList.add(tiles[0].classList[2]);
-    houses[43].classList.add(tiles[0].classList[2]);
-    houses[44].classList.add(tiles[0].classList[2]);
-    houses[45].classList.add(tiles[0].classList[2]);
-    houses[46].classList.add(tiles[0].classList[2]);
-    houses[47].classList.add(tiles[0].classList[2]);
-    houses[48].classList.add(tiles[0].classList[2]);
-    houses[49].classList.add(tiles[0].classList[2]);
-    houses[50].classList.add(tiles[0].classList[2]);
-    houses[51].classList.add(tiles[0].classList[2]);
-    houses[52].classList.add(tiles[0].classList[2]);
-    houses[53].classList.add(tiles[0].classList[2]);
+
+    houses[7].classList.add(tiles[0].classList[2], tiles[3].classList[2]);
+    houses[8].classList.add(tiles[0].classList[2], tiles[1].classList[2], tiles[4].classList[2]);
+    houses[9].classList.add(tiles[1].classList[2], tiles[2].classList[2], tiles[5].classList[2]);
+    houses[10].classList.add(tiles[2].classList[2], tiles[6].classList[2]);
+
+    houses[11].classList.add(tiles[3].classList[2]);
+    houses[12].classList.add(tiles[0].classList[2], tiles[3].classList[2], tiles[4].classList[2]);
+    houses[13].classList.add(tiles[1].classList[2], tiles[4].classList[2], tiles[5].classList[2]);
+    houses[14].classList.add(tiles[2].classList[2], tiles[5].classList[2], tiles[6].classList[2]);
+    houses[15].classList.add(tiles[6].classList[2]);
+
+    houses[16].classList.add(tiles[3].classList[2], tiles[7].classList[2]);
+    houses[17].classList.add(tiles[3].classList[2], tiles[4].classList[2], tiles[8].classList[2]);
+    houses[18].classList.add(tiles[4].classList[2], tiles[5].classList[2], tiles[9].classList[2]);
+    houses[19].classList.add(tiles[5].classList[2], tiles[6].classList[2], tiles[10].classList[2]);
+    houses[20].classList.add(tiles[6].classList[2], tiles[11].classList[2]);
+
+    houses[21].classList.add(tiles[7].classList[2]);
+    houses[22].classList.add(tiles[3].classList[2], tiles[7].classList[2], tiles[8].classList[2]);
+    houses[23].classList.add(tiles[4].classList[2], tiles[8].classList[2], tiles[9].classList[2]);
+    houses[24].classList.add(tiles[5].classList[2], tiles[9].classList[2], tiles[10].classList[2]);
+    houses[25].classList.add(tiles[6].classList[2], tiles[10].classList[2], tiles[11].classList[2]);
+    houses[26].classList.add(tiles[11].classList[2]);
+
+    houses[27].classList.add(tiles[7].classList[2]);
+    houses[28].classList.add(tiles[7].classList[2], tiles[8].classList[2], tiles[12].classList[2]);
+    houses[29].classList.add(tiles[8].classList[2], tiles[9].classList[2], tiles[13].classList[2]);
+    houses[30].classList.add(tiles[9].classList[2], tiles[10].classList[2], tiles[14].classList[2]);
+    houses[31].classList.add(tiles[10].classList[2], tiles[11].classList[2], tiles[15].classList[2]);
+    houses[32].classList.add(tiles[11].classList[2]);
+
+    houses[33].classList.add(tiles[7].classList[2], tiles[12].classList[2]);
+    houses[34].classList.add(tiles[8].classList[2], tiles[12].classList[2], tiles[13].classList[2]);
+    houses[35].classList.add(tiles[9].classList[2], tiles[13].classList[2], tiles[14].classList[2]);
+    houses[36].classList.add(tiles[10].classList[2], tiles[14].classList[2], tiles[15].classList[2]);
+    houses[37].classList.add(tiles[11].classList[2], tiles[15].classList[2]);
+
+    houses[38].classList.add(tiles[12].classList[2]);
+    houses[39].classList.add(tiles[12].classList[2], tiles[13].classList[2], tiles[16].classList[2]);
+    houses[40].classList.add(tiles[13].classList[2], tiles[14].classList[2], tiles[17].classList[2]);
+    houses[41].classList.add(tiles[14].classList[2], tiles[15].classList[2], tiles[18].classList[2]);
+    houses[42].classList.add(tiles[15].classList[2]);
+
+    houses[43].classList.add(tiles[12].classList[2], tiles[16].classList[2]);
+    houses[44].classList.add(tiles[13].classList[2], tiles[16].classList[2], tiles[17].classList[2]);
+    houses[45].classList.add(tiles[14].classList[2], tiles[17].classList[2], tiles[18].classList[2]);
+    houses[46].classList.add(tiles[15].classList[2], tiles[18].classList[2]);
+
+    houses[47].classList.add(tiles[16].classList[2]);
+    houses[48].classList.add(tiles[16].classList[2], tiles[17].classList[2]);
+    houses[49].classList.add(tiles[17].classList[2], tiles[18].classList[2]);
+    houses[50].classList.add(tiles[18].classList[2]);
+
+    houses[51].classList.add(tiles[16].classList[2]);
+    houses[52].classList.add(tiles[17].classList[2]);
+    houses[53].classList.add(tiles[18].classList[2]);
 }
 
 window.addEventListener('DOMContentLoaded', e => {
-    // makeLeftRoads();
-    // makeTopLeftRoads();
-    // makeTopRightRoads();
-    // makeHouses();
-    // initialAssignment();
-    // initialHouseAssignment();
+    makeLeftRoads();
+    makeTopLeftRoads();
+    makeTopRightRoads();
+    makeHouses();
+    initialAssignment();
+    initialHouseAssignment();
 });
